@@ -108,7 +108,7 @@
                      <children>
                         <HBox prefHeight="17.0" prefWidth="326.0">
                            <children>
-                              <Label fx:id="NLabel" text="N" />
+                              <Label fx:id="NLabel" text="N = " />
                            </children>
                            <VBox.margin>
                               <Insets left="10.0" />
@@ -116,7 +116,7 @@
                         </HBox>
                         <HBox layoutX="10.0" layoutY="64.0" prefHeight="50.0" prefWidth="200.0">
                            <children>
-                              <Label fx:id="FILabel" text="FI" />
+                              <Label fx:id="FILabel" text="FI = " />
                            </children>
                            <VBox.margin>
                               <Insets left="10.0" top="10.0" />
@@ -124,7 +124,7 @@
                         </HBox>
                         <HBox layoutX="10.0" layoutY="81.0" prefHeight="50.0" prefWidth="200.0">
                            <children>
-                              <Label fx:id="ETLabel" text="ET" />
+                              <Label fx:id="ETLabel" text="ET = " />
                            </children>
                            <VBox.margin>
                               <Insets left="10.0" top="10.0" />

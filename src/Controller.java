@@ -89,6 +89,10 @@ public class Controller {
        try {
            epsilon = Double.parseDouble(epsilonTextField.getText());
 
+           if (epsilon < 0.0 || epsilon > 1.0) {
+               throw new NumberFormatException();
+           }
+
            if (jm.isSelected()) {
                AbstractModel model = new JelinskiMorandaModel(list);
                result = model.calculate(epsilon);
