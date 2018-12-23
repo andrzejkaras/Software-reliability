@@ -6,15 +6,7 @@ public class SchickWolvertonModel extends AbstractModel {
     }
 
     @Override
-    void calculate(double epsilon) {
-        Result result = checkValueAndCountFI(epsilon);
-
-        System.out.println("N: " + result.getN());
-        System.out.println("FI: " + result.getFI());
-        System.out.println("ET: " + result.getET());
-    }
-
-    private Result checkValueAndCountFI(double epsilon) {
+    public Result calculate(double epsilon) {
         int N = this.n + 1;
 
         int T = countSquareSum();

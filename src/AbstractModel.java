@@ -9,5 +9,5 @@ public abstract class AbstractModel {
         data = list.toArray(new Integer[n]);
     }
 
-    abstract void calculate(double epsilon);
+    abstract Result calculate(double epsilon);
 }

@@ -6,14 +6,7 @@ public class JelinskiMorandaModel extends AbstractModel {
     }
 
     @Override
-    public void calculate(double epsilon) {
-        Result result = checkValueAndCountFI(epsilon);
-        System.out.println("N: " + result.getN());
-        System.out.println("FI: " + result.getFI());
-        System.out.println("ET: " + result.getET());
-    }
-
-    private Result checkValueAndCountFI(double epsilon) {
+    public Result calculate(double epsilon) {
         int N = this.n + 1;
 
         while (Math.abs(countFirstFactor(N) - countSecondFactor(N)) > epsilon) {
@@ -21,7 +14,6 @@ public class JelinskiMorandaModel extends AbstractModel {
         }
 
         double FI = countFI(N);
-
         return new Result(N, FI, countET(N, FI));
     }
 

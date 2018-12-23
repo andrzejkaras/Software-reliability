@@ -15,12 +15,13 @@ public class ReadFileUtil {
 
             while ((line = br.readLine()) != null) {
 
-                String[] splitted = line.split(",");
+                String[] splitted = line.split("\\s+");
 
                 for (String s : splitted) {
                     list.add(Integer.parseInt(s));
                 }
             }
+
             br.close();
 
         } catch (IOException e) {
