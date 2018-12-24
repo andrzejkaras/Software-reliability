@@ -1,6 +1,10 @@
+package pl.edu.wat.no.model;
+
+import pl.edu.wat.no.pojo.Result;
+
 import java.util.List;
 
-public class JelinskiMorandaModel extends AbstractModel {
+public class JelinskiMorandaModel extends pl.edu.wat.no.model.AbstractModel {
     public JelinskiMorandaModel(List<Integer> list) {
         super(list);
     }

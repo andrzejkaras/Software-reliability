@@ -1,7 +1,14 @@
+package pl.edu.wat.no.controller;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import pl.edu.wat.no.model.AbstractModel;
+import pl.edu.wat.no.model.JelinskiMorandaModel;
+import pl.edu.wat.no.model.SchickWolvertonModel;
+import pl.edu.wat.no.pojo.Result;
+import pl.edu.wat.no.util.ReadFileUtil;
 
 import java.io.File;
 import java.util.List;
@@ -34,8 +41,6 @@ public class Controller {
    @FXML
    Label ETLabel;
 
-   private File selectedFile;
-
    private List<Integer> list;
 
    @FXML
@@ -47,7 +52,7 @@ public class Controller {
 
    public void chooseLocalization() {
        FileChooser fileChooser = new FileChooser();
-       selectedFile = fileChooser.showOpenDialog(ap.getScene().getWindow());
+       File selectedFile = fileChooser.showOpenDialog(ap.getScene().getWindow());
 
        String fileExtension = selectedFile.getName();
 
@@ -82,7 +87,6 @@ public class Controller {
    }
 
    public void executeComputations() {
-
        Result result;
        double epsilon;
 

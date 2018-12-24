@@ -1,3 +1,7 @@
+package pl.edu.wat.no.model;
+
+import pl.edu.wat.no.pojo.Result;
+
 import java.util.List;
 
 public abstract class AbstractModel {
@@ -9,5 +13,5 @@ public abstract class AbstractModel {
         data = list.toArray(new Integer[n]);
     }
 
-    abstract Result calculate(double epsilon);
+    abstract public Result calculate(double epsilon);
 }

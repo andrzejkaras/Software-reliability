@@ -1,6 +1,10 @@
+package pl.edu.wat.no.model;
+
+import pl.edu.wat.no.pojo.Result;
+
 import java.util.List;
 
-public class SchickWolvertonModel extends AbstractModel {
+public class SchickWolvertonModel extends pl.edu.wat.no.model.AbstractModel {
     public SchickWolvertonModel(List<Integer> list) {
         super(list);
     }

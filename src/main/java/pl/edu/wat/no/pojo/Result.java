@@ -1,3 +1,5 @@
+package pl.edu.wat.no.pojo;
+
 public class Result {
     private int N;
     private double FI;
