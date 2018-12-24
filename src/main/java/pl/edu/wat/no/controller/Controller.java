@@ -1,14 +1,14 @@
-package pl.edu.wat.no.controller;
+package main.java.pl.edu.wat.no.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
-import pl.edu.wat.no.model.AbstractModel;
-import pl.edu.wat.no.model.JelinskiMorandaModel;
-import pl.edu.wat.no.model.SchickWolvertonModel;
-import pl.edu.wat.no.pojo.Result;
-import pl.edu.wat.no.util.ReadFileUtil;
+import main.java.pl.edu.wat.no.model.AbstractModel;
+import main.java.pl.edu.wat.no.model.JelinskiMorandaModel;
+import main.java.pl.edu.wat.no.model.SchickWolvertonModel;
+import main.java.pl.edu.wat.no.pojo.Result;
+import main.java.pl.edu.wat.no.util.ReadFileUtil;
 
 import java.io.File;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.edu.wat.no.util;
+package main.java.pl.edu.wat.no.util;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

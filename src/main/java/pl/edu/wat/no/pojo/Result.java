@@ -1,4 +1,4 @@
-package pl.edu.wat.no.pojo;
+package main.java.pl.edu.wat.no.pojo;
 
 public class Result {
     private int N;
