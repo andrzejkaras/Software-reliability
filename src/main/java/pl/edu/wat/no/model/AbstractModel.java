@@ -1,6 +1,6 @@
-package main.java.pl.edu.wat.no.model;
+package pl.edu.wat.no.model;
 
-import main.java.pl.edu.wat.no.pojo.Result;
+import pl.edu.wat.no.pojo.Result;
 
 import java.util.List;
 
